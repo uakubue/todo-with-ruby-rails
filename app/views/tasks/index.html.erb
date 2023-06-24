@@ -1,0 +1,19 @@
+<% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice" >
+        <%= notice%>
+    </p>
+<% end %>
+
+<h1 class="px-12 font-bold text-3xl text-blue-600 w-full items-center justify-center">My TODO</h1>
+
+<div>
+    <%= render "form", task: @task %>
+</div>
+
+<div id="tasks">
+    <h1 class="font-bold text-green-400 text-lg mb-6 text-gray-700">Tasks:</h1>
+</div>
+
+<div class="px-3 font-bold font-sans-serif shadow border-lg rounded-lg">
+    <%= render @tasks, class:"bg-gray-700" %>
+</div>

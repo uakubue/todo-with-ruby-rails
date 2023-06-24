@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply mt-3 py-1 rounded-lg px-5 inline-block font-medium cursor-pointer;
+  }
+}
+
+
